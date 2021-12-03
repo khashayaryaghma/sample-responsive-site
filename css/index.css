@@ -1,7 +1,12 @@
+@font-face {
+    font-family: iran;
+    src: url(../font/Iranian\ Sans.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: iran , sans-serif;
 }
 body{
     background-color: #f8f9fa;
@@ -12,7 +17,7 @@ header{
     padding: 1rem;
     align-items: baseline;
     background-color: #dee2e6;
-    box-shadow: -10px 5px 7px #6c757d;
+    box-shadow: 0px 5px 7px #6c757d;
     position: sticky;
     top: 0;
 }
@@ -41,7 +46,7 @@ footer{
     flex-wrap: wrap;
     align-items: baseline;
     background-color: #dee2e6;
-    box-shadow: -10px -5px 7px #6c757d;
+    box-shadow: 0px -5px 7px #6c757d;
 
 }
 .a{
@@ -61,13 +66,25 @@ footer{
     background-size: 85vw 500px;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: #dee2e6;
     height: 500px;
-    width: 100vw;
+    width: 100%; 
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .box{
-
+    width: 14rem;
+    border-radius: 8px;
+    box-shadow: 3px 3px 7px #6c757d , -3px -3px 7px #6c757d;
+    text-align: center;
+    background-color: #e9ecef;
+}
+.img1{
+    width: 12rem;
+}
+.img2{
+    width: 8rem;
 }

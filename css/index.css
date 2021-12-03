@@ -65,6 +65,9 @@ footer{
     color: white;
     font-size: xx-large;
 }
+.i a i:hover{
+    color: coral;
+}
 .headimage{
     background-image: url("../image/headerimage.jpeg");
     background-size: 100% 500px;

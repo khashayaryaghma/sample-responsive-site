@@ -63,7 +63,7 @@ footer{
 }
 .headimage{
     background-image: url("../image/headerimage.jpeg");
-    background-size: 85vw 500px;
+    background-size: 100% 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #dee2e6;

@@ -154,13 +154,9 @@ span i:hover{
 }
 .box::after{
     position: absolute;
-    content: url("../image/star-solid.svg") url("../image/star-solid.svg");
-    color: gold;
-    font-size: 11px;
-    padding: 4px;
+    content: url("../image/star-solid.svg") url("../image/star-solid.svg") url("../image/star-solid.svg") url("../image/star-solid.svg");
     width: 1rem;
     height: 1rem;
-    border-radius: 7px;
     top: 12px;
-    left: 10px;
+    left: 8px;
 }

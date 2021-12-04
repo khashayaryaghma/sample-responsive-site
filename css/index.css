@@ -84,13 +84,15 @@ footer{
     justify-content: space-around;
 }
 .box{
+    position: relative;
     width: 14rem;
     border-radius: 8px;
-    
     text-align: center;
     background-color: #dee2e6;
     font-size: small;
-    padding: 2rem;
+    padding-top: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 2.5rem ;
     transition: all linear 0.2s;
@@ -98,9 +100,11 @@ footer{
 }
 .img1{
     width: 10rem;
+    margin-bottom: 1rem;
 }
 .img2{
     width: 8rem;
+    mb1rem
 }
 span{
     font-size: smaller;
@@ -113,6 +117,47 @@ h3{
     transform: scale(1.06);
     box-shadow: 6px 6px 7px #6c757d , -6px -6px 7px #6c757d;
 }
-span{
-    text-align: right;
+.bottomcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+span i{
+    background-color: #adb5bd;
+    color: black;
+    font-size: 18px;
+    border-radius: 40%;
+    transition: all linear 0.5s;
+    padding: 5px;
+    transition: all linear 0.7s;
+}
+span i:hover{
+    cursor: pointer;
+    transform-origin: left;
+    width: 5rem;
+}
+.box::before{
+    position: absolute;
+    content: "پیشنهاد ویژه";
+    font-size: 11px;
+    padding: 4px;
+    background-color: #e63946;
+    border-radius: 7px;
+    top: 12px;
+    right: 10px;
+}
+.box::after{
+    position: absolute;
+    content: url("../image/star-solid.svg") url("../image/star-solid.svg");
+    color: gold;
+    font-size: 11px;
+    padding: 4px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 7px;
+    top: 12px;
+    left: 10px;
 }

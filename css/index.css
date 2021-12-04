@@ -104,6 +104,7 @@ footer{
 }
 .img2{
     width: 8rem;
+    margin-bottom: 1rem;
 }
 span{
     font-size: smaller;
@@ -131,14 +132,13 @@ span i{
     border-radius: 40%;
     transition: all linear 0.5s;
     padding: 5px;
-    transition: all linear 0.7s;
 }
 span i:hover{
     cursor: pointer;
     transform-origin: left;
     width: 5rem;
 }
-.box::before{
+.box1::before{
     position: absolute;
     content: "پیشنهاد ویژه";
     font-size: 11px;

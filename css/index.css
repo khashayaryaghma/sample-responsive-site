@@ -133,14 +133,14 @@ span i{
     background-color: #adb5bd;
     color: black;
     font-size: 18px;
-    border-radius: 40%;
-    transition: all linear 0.5s;
+    border-radius: 35%;
     padding: 5px;
+    transition: all linear 0.5s;
 }
 span i:hover{
     cursor: pointer;
-    transform-origin: left;
-    width: 5rem;
+    /* transform-origin: left;
+    width: 5rem; */
 }
 .box1::before{
     position: absolute;

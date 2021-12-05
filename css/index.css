@@ -129,19 +129,36 @@ h3{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
-span i{
-    background-color: #adb5bd;
-    color: black;
-    font-size: 18px;
-    border-radius: 25%;
-    padding: 6px;
-    transition: all ease-in-out 0.4s;
+.like , .shop{
+  color: #000;
+  background-color: #adb5bd;
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
 }
-span i:hover{
-    cursor: pointer;
-    padding-right: 3.4rem;
+.like::after {
+  float: right;
+  content: "علاقه";
+  display: none;
+  padding: 3px 0 0 10px;
+  font-size: 14px;
 }
-/*برای هر کارتی که پیشنهاد ویژه داشت از این کلاس استفاده میکنیم*/
+.shop::after {
+  float: right;
+  content: "خرید";
+  display: none;
+  padding: 3px 0 0 10px;
+  font-size: 14px;
+}
+.like:hover , .shop:hover {
+  padding-right:1rem;
+}
+.like:hover:after , .shop:hover::after{
+  display: inline;
+}
+/*i use this class for every cards that have special offer */
 .box1::before{
     position: absolute;
     content: "پیشنهاد ویژه";
@@ -152,7 +169,7 @@ span i:hover{
     top: 12px;
     right: 10px;
 }
-/*برای هر کارت چهار ستاره از این کلاس استفاده میکنیم*/
+/*i use this class for every cards that have four stars */
 .star4::after{
     position: absolute;
     content: url("../image/star-solid.svg") url("../image/star-solid.svg") url("../image/star-solid.svg") url("../image/star-solid.svg");
@@ -162,7 +179,7 @@ span i:hover{
     left: 8px;
     transform: rotate(-90deg);
 }
-/* برای هر کارت سه ستاره از این کلاس استفاده میکنیم */
+/*i use this class for every cards that have three stars */
 .star3::after{
     position: absolute;
     content: url("../image/star-solid.svg") url("../image/star-solid.svg") url("../image/star-solid.svg");
@@ -172,4 +189,3 @@ span i:hover{
     left: 8px;
     transform: rotate(-90deg);
 }
-
